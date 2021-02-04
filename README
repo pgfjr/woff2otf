@@ -1,0 +1,39 @@
+Woff2OT v. 1.0
+
+About
+=====
+
+Woff2OT converts a Woff file to either an OpenType PostScript or an OpenType TrueType font. This is essentially a header-only library as the complete functionalities are done in the header. Font collections are NOT supported. See also its companion program OT2Woff, which converts an OpenType font to Woff.
+
+
+Compilation
+===========
+
+This program requires the Zlib library. Use of the shared Zlib library (zlib.dll or libz.so) is preferred since its companion program OT2Woff also uses Zlib. Both programs can be compiled using either Visual Studio or GNU's g++.
+
+
+Usage Examples (Windows)
+========================
+
+	woff2ot cmr10.woff cmr10.otf
+
+	woff2ot cambria.woff cambria.ttf
+
+	woff2ot -type cmr10.woff
+
+The last one is used to determine the type of OpenType file in the Woff file, so you will know which file extension to use in the output file.
+
+
+Copying
+=======
+
+This program is released under the GNU General Public License
+version 3 or newer. See the COPYING file included with this distribution or <http://www.gnu.org/licenses/>.
+
+	Copyright (C) 2020 Peter Frane Jr.
+
+
+Contact
+=======
+
+Please send any inquries to pfranejr@hotmail.com
